@@ -179,8 +179,8 @@ footer .top i {
 }
 
 body {
-  width: 100%;
   margin: auto;
+  font-size: 1rem;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -202,7 +202,6 @@ section {
 }
 .apropos .apropos-items {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 30px;
   -webkit-column-gap: 30px;

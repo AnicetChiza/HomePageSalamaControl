@@ -1,95 +1,96 @@
 @use '../utils/' as u;
 @use '../utils/mixins' as *;
-
 //body proprieties
-body{
-    width: 100%;
+body {
     margin: auto;
+    font-size: 1rem;
     font-family: u.$font-Monserat;
 }
 
 //FOR THE 'A PROPOS' OF SALAMA CONTROL
-section{
-    background-image:url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(0,0,0,0.07)'/%3E%3C/svg%3E");
+section {
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(0,0,0,0.07)'/%3E%3C/svg%3E");
 }
-.apropos{
+
+.apropos {
     padding: 20px 80px;
-    h3{
+    h3 {
         @include title-properties;
     }
-    h5{
+    h5 {
         @include title-h5;
     }
-
-    .apropos-items{
+    .apropos-items {
         display: flex;
-        flex-direction: row;
         align-items: center;
         gap: 30px;
         -webkit-column-gap: 30px;
-        i{
+        i {
             font-size: 30px;
             font-style: italic;
             color: var(--bluish-green);
         }
-
-        img{
+        img {
             width: 35rem;
         }
     }
 }
+
+
 /*--------------------------*/
+
 //FOR THE FONCTIONNALITY PART
+
 /*--------------------------*/
-.fonctionnalite-salama{
+
+.fonctionnalite-salama {
     margin-top: 20px;
     padding: 20px 80px;
-    h3{
+    h3 {
         @include title-properties;
     }
-    h5{
+    h5 {
         @include title-h5;
     }
-
-    .fonctionnalite-content{
+    .fonctionnalite-content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 10px;
         -webkit-column-gap: 10px;
-        
-        div{
+        div {
             padding: 15px 20px;
         }
     }
 }
 
+
 /*--------------------------*/
-  //FOR THE ADVANTAGES PART
+
+//FOR THE ADVANTAGES PART
+
 /*--------------------------*/
-.advantages-salama{
+
+.advantages-salama {
     margin-top: 20px;
     padding: 20px 80px;
     text-align: center;
-    h2{
+    h2 {
         margin-top: 10px;
-
         color: var(--bluish-green);
     }
-
-    .advantages-content{
+    .advantages-content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 20px;
         gap: 20px;
         -webkit-column-gap: 20px;
-
-        div{
-            h4{
+        div {
+            h4 {
                 margin-top: 10px;
                 margin-bottom: 10px;
                 color: var(--bluish-green);
             }
-            i{
+            i {
                 border-radius: 50%;
                 padding: 19px 20px;
             }
@@ -97,40 +98,44 @@ section{
     }
 }
 
+
 /*--------------------------*/
-  //FOR CONTACT-US PART
+
+//FOR CONTACT-US PART
+
 /*--------------------------*/
-.contactez-nous{
+
+.contactez-nous {
     padding: 20px 80px;
-    h3{
+    h3 {
         @include title-properties;
     }
-    h5{
+    h5 {
         @include title-h5;
     }
 }
 
 
 /*************************************/
+
 //FOR SALAMA APP//
-.salama-app{
+.salama-app {
     padding: 20px 80px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
-    .salama-applications{
+    .salama-applications {
         display: flex;
         flex-direction: row;
         gap: 5px;
         -webkit-column-gap: 5px;
-        div{
+        div {
             color: var(--white);
             padding: 10px 20px;
             border-radius: 5px;
-            background: rgba(1,35,7,0.8);
-            a{
+            background: rgba(1, 35, 7, 0.8);
+            a {
                 color: var(--white);
             }
         }
