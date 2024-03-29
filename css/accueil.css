@@ -282,6 +282,11 @@ section {
   margin-bottom: 10px;
   border-bottom: 4px solid var(--shade-yellow);
 }
+.contactez-nous .contact-container {
+  display: flex;
+  gap: 10px;
+  -webkit-column-gap: 10px;
+}
 
 *,
 ::after,
