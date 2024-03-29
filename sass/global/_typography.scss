@@ -16,4 +16,22 @@ html {
     scroll-padding-top: 5rem;
 }
 
+//Input properties
+input {
+    border: none;
+    outline: none;
+    font-family: u.$font-Monserat;
+}
+
 //FORMULAIRE FOR CONTACT US
+.contact-form {
+    margin-top: 15px;
+    form {
+        input {
+            width: 100%;
+            padding: 10px 15px;
+            border-radius: 4px;
+            box-shadow: 0px 5px 15px var(--gray);
+        }
+    }
+}

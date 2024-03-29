@@ -319,6 +319,22 @@ html {
   scroll-padding-top: 5rem;
 }
 
+input {
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-form {
+  margin-top: 15px;
+}
+.contact-form form input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 4px;
+  box-shadow: 0px 5px 15px var(--gray);
+}
+
 @media (max-width: 978px) {
   header .header .header-items {
     display: none;
