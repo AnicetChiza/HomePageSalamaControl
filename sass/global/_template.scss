@@ -114,30 +114,3 @@ section {
         @include title-h5;
     }
 }
-
-
-/*************************************/
-
-//FOR SALAMA APP//
-.salama-app {
-    padding: 20px 80px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    .salama-applications {
-        display: flex;
-        flex-direction: row;
-        gap: 5px;
-        -webkit-column-gap: 5px;
-        div {
-            color: var(--white);
-            padding: 10px 20px;
-            border-radius: 5px;
-            background: rgba(1, 35, 7, 0.8);
-            a {
-                color: var(--white);
-            }
-        }
-    }
-}

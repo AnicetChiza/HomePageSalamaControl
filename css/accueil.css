@@ -283,30 +283,6 @@ section {
   border-bottom: 4px solid var(--shade-yellow);
 }
 
-/*************************************/
-.salama-app {
-  padding: 20px 80px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.salama-app .salama-applications {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  -webkit-column-gap: 5px;
-}
-.salama-app .salama-applications div {
-  color: var(--white);
-  padding: 10px 20px;
-  border-radius: 5px;
-  background: rgba(1, 35, 7, 0.8);
-}
-.salama-app .salama-applications div a {
-  color: var(--white);
-}
-
 *,
 ::after, ::before {
   margin: 0;
