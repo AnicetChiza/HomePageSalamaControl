@@ -284,7 +284,8 @@ section {
 }
 
 *,
-::after, ::before {
+::after,
+::before {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -295,62 +296,6 @@ section {
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
-}
-
-form .formulaire {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  margin-top: 10px;
-  -webkit-column-gap: 15px;
-}
-form .formulaire div {
-  width: 100%;
-  display: grid;
-}
-form .formulaire div label {
-  font-weight: bolder;
-}
-form .formulaire div input {
-  margin-top: 5px;
-  border: none;
-  outline: none;
-  padding: 8px 12px;
-  border-radius: 5px;
-  font-family: "Montserrat", sans-serif;
-  box-shadow: 0px 0px 180px 0px rgba(0, 0, 0, 0.5);
-  font-family: "Montserrat", sans-serif;
-}
-form .textarea {
-  gap: 10px;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  -webkit-column-gap: 10px;
-}
-form .textarea input, form .textarea textarea {
-  border: none;
-  outline: none;
-  padding: 8px 12px;
-  border-radius: 5px;
-  font-family: "Montserrat", sans-serif;
-  box-shadow: 0px 0px 180px 0px rgba(0, 0, 0, 0.5);
-  font-family: "Montserrat", sans-serif;
-  background: none;
-}
-form button {
-  cursor: pointer;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: 600;
-  background: none;
-  font-family: "Montserrat", sans-serif;
-  border: 2px solid var(--white);
-  width: 200px;
-  border: none;
-  color: var(--white);
-  margin-top: 15px;
-  background: rgba(1, 35, 7, 0.8);
 }
 
 @media (max-width: 978px) {
