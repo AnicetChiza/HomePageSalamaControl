@@ -6,9 +6,9 @@
   --pink: #ffc2b4;
   --white: #fff;
   --black: #0000009f;
-  --background: rgba(255, 255, 255, 0.233);
+  --gray: #f2eeee7d;
   --neutral-shade: #f8f8ed;
-  --red-opaque:#fd65652a;
+  --red-opaque: #fd65652a;
 }
 
 main {
@@ -284,8 +284,21 @@ section {
 }
 .contactez-nous .contact-container {
   display: flex;
+  gap: 15px;
+  -webkit-column-gap: 15px;
+}
+.contactez-nous .contact-container .bloc-contact .items {
+  display: flex;
+  align-items: center;
   gap: 10px;
   -webkit-column-gap: 10px;
+  margin-top: 15px;
+}
+.contactez-nous .contact-container .bloc-contact .items i {
+  padding: 15px;
+  border-radius: 50%;
+  color: var(--bluish-green);
+  background-color: var(--gray);
 }
 
 *,

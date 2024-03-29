@@ -115,7 +115,22 @@ section {
     }
     .contact-container {
         display: flex;
-        gap: 10px;
-        -webkit-column-gap: 10px;
+        gap: 15px;
+        -webkit-column-gap: 15px;
+        .bloc-contact {
+            .items {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                -webkit-column-gap: 10px;
+                margin-top: 15px;
+                i {
+                    padding: 15px;
+                    border-radius: 50%;
+                    color: var(--bluish-green);
+                    background-color: var(--gray);
+                }
+            }
+        }
     }
 }
