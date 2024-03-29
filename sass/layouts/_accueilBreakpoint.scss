@@ -1,68 +1,55 @@
 @use '../utils/' as u;
-
-@include u.breakpoint(laptop){
-
-    header{
-        .header{
-            .header-items{
+@include u.breakpoint(laptop) {
+    header {
+        .header {
+            .header-items {
                 display: none;
             }
-            .menu{
+            .menu {
                 display: initial;
-                .menu-icons .icon{
+                .menu-icons .icon {
                     display: block;
                     cursor: pointer;
                 }
-                .menu-icons .exit{
+                .menu-icons .exit {
                     display: none;
                     cursor: pointer;
                 }
-                .menu-mobile .icon{
+                .menu-mobile .icon {
                     display: none;
                 }
-                .menu-mobile .exit{
+                .menu-mobile .exit {
                     display: initial;
                 }
-                .menu-mobile{
+                .menu-mobile {
                     margin-top: 0;
                 }
             }
         }
     }
-
-    .cover-page-content{
-        .content{
-            .images{
+    .cover-page-content {
+        .content {
+            .images {
                 display: none;
             }
         }
     }
-
-    .apropos{
-        .apropos-items{
+    .apropos {
+        .apropos-items {
             display: flex;
             flex-direction: column;
         }
     }
-
-    .fonctionnalite-salama, .advantages-salama{
-        .fonctionnalite-content, .advantages-content{
+    .fonctionnalite-salama,
+    .advantages-salama {
+        .fonctionnalite-content,
+        .advantages-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
     }
-
-    .salama-app{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-        -webkit-column-gap: 20px;
-        justify-content: initial;
-    }
-
-    footer{
-        .footer-content{
+    footer {
+        .footer-content {
             display: grid;
             grid-template-columns: auto auto;
             gap: 50px;
@@ -70,39 +57,32 @@
     }
 }
 
-@include u.breakpoint(tablet){
-    header{
-        .header{
+@include u.breakpoint(tablet) {
+    header {
+        .header {
             padding: 6px 25px;
         }
     }
-    .apropos, .fonctionnalite-salama, .advantages-salama, 
-    .cover-page-content, .contactez-nous, footer{
+    .apropos,
+    .fonctionnalite-salama,
+    .advantages-salama,
+    .cover-page-content,
+    .contactez-nous,
+    footer {
         padding: 20px 40px;
     }
-
-    @media screen and (max-width: 600px){
-        .apropos{
-            .apropos-items{
-                img{
+    @media screen and (max-width: 600px) {
+        .apropos {
+            .apropos-items {
+                img {
                     width: 100%;
                 }
             }
         }
-
-        form{
-            .formulaire{
-                display: flex;
-                flex-direction: column;
-                gap: 8px;
-                -webkit-column-gap: 8px;
-            }
-        }
     }
-
-    @media screen and (max-width: 530px){
-        .fonctionnalite-salama{
-            .fonctionnalite-content{
+    @media screen and (max-width: 530px) {
+        .fonctionnalite-salama {
+            .fonctionnalite-content {
                 display: grid;
                 grid-template-columns: 1fr;
             }
@@ -110,47 +90,40 @@
     }
 }
 
-@include u.breakpoint(mobile){
-    .cover-page-content{
-        .content{
-            .items{
+@include u.breakpoint(mobile) {
+    .cover-page-content {
+        .content {
+            .items {
                 text-align: center;
             }
         }
     }
-    
-    .fonctionnalite-salama, .advantages-salama{
-        .fonctionnalite-content, .advantages-content{
+    .fonctionnalite-salama,
+    .advantages-salama {
+        .fonctionnalite-content,
+        .advantages-content {
             display: grid;
             grid-template-columns: 1fr;
         }
     }
-
-    footer{
-        .footer-content{
+    footer {
+        .footer-content {
             display: grid;
             grid-template-columns: auto;
             gap: 50px;
         }
     }
-
-    header{
-        .header{
+    header {
+        .header {
             padding: 6px 12px;
         }
     }
-    .apropos, .fonctionnalite-salama, .advantages-salama, 
-    .cover-page-content, .contactez-nous, footer{
+    .apropos,
+    .fonctionnalite-salama,
+    .advantages-salama,
+    .cover-page-content,
+    .contactez-nous,
+    footer {
         padding: 20px 20px;
-    }
-
-    .salama-app{
-        .salama-applications{
-            display: flex;
-            flex-direction: column;
-            div{
-                width: 100%;
-            }
-        }
     }
 }

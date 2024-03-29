@@ -329,17 +329,12 @@ html {
     display: flex;
     flex-direction: column;
   }
-  .fonctionnalite-salama .fonctionnalite-content, .fonctionnalite-salama .advantages-content, .advantages-salama .fonctionnalite-content, .advantages-salama .advantages-content {
+  .fonctionnalite-salama .fonctionnalite-content,
+  .fonctionnalite-salama .advantages-content,
+  .advantages-salama .fonctionnalite-content,
+  .advantages-salama .advantages-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-  .salama-app {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-    -webkit-column-gap: 20px;
-    justify-content: initial;
   }
   footer .footer-content {
     display: grid;
@@ -351,20 +346,18 @@ html {
   header .header {
     padding: 6px 25px;
   }
-  .apropos, .fonctionnalite-salama, .advantages-salama,
-  .cover-page-content, .contactez-nous, footer {
+  .apropos,
+  .fonctionnalite-salama,
+  .advantages-salama,
+  .cover-page-content,
+  .contactez-nous,
+  footer {
     padding: 20px 40px;
   }
 }
 @media screen and (max-width: 768px) and (max-width: 600px) {
   .apropos .apropos-items img {
     width: 100%;
-  }
-  form .formulaire {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    -webkit-column-gap: 8px;
   }
 }
 @media screen and (max-width: 768px) and (max-width: 530px) {
@@ -377,7 +370,10 @@ html {
   .cover-page-content .content .items {
     text-align: center;
   }
-  .fonctionnalite-salama .fonctionnalite-content, .fonctionnalite-salama .advantages-content, .advantages-salama .fonctionnalite-content, .advantages-salama .advantages-content {
+  .fonctionnalite-salama .fonctionnalite-content,
+  .fonctionnalite-salama .advantages-content,
+  .advantages-salama .fonctionnalite-content,
+  .advantages-salama .advantages-content {
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -389,15 +385,12 @@ html {
   header .header {
     padding: 6px 12px;
   }
-  .apropos, .fonctionnalite-salama, .advantages-salama,
-  .cover-page-content, .contactez-nous, footer {
+  .apropos,
+  .fonctionnalite-salama,
+  .advantages-salama,
+  .cover-page-content,
+  .contactez-nous,
+  footer {
     padding: 20px 20px;
-  }
-  .salama-app .salama-applications {
-    display: flex;
-    flex-direction: column;
-  }
-  .salama-app .salama-applications div {
-    width: 100%;
   }
 }/*# sourceMappingURL=accueil.css.map */
