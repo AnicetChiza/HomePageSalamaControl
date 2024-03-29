@@ -1,0 +1,182 @@
+@use '../utils/' as u;
+@use '../utils/mixins' as *;
+
+//This part is for the cover page, it contains the header and the presentation part which has the login button
+main{
+    width: 100%;
+    height: 100vh;
+    color: var(--white);
+    background: linear-gradient(to right, rgba(1,35,7,0.8)0%, rgba(87,76,6, 0.8) 100%), url(../../images/accueil_background_image.jpg) no-repeat;
+}
+
+//THIS IS FOR THE HEADER
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    .header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 6px 60px;
+        justify-content: space-between;
+
+        //Ici nous avons traités notre MENU HAMBURGER
+        .menu{
+            display: none;
+            .menu-icons{
+                width: 50px;
+                text-align: center;
+                padding: 10px 10px;
+                color: var(--bluish-green);
+                background-color: var(--shade-yellow);
+
+            }
+            .menu-container{
+                position: absolute;
+                top: 70px;
+                right: 0.5px;
+                width: 100%;
+                transition: 1s;
+                margin-top: -200%;
+                background-color: var(--white);
+                display: flex;
+                flex-direction: row;
+                ul{
+                    width: 100%;
+                    li{
+                        list-style: none;
+                        color: var(--bluish-green);
+                        text-align: center;
+                        padding: 15px;
+                        box-shadow: 0px 0px 1.5px 0.5px rgba(1,35,7,0.8);
+                        a{
+                            color: rgba(1,35,7,0.8);
+                            text-decoration: none;
+                            font-weight: bolder;
+                            &:hover{
+                                color: var(--shade-yellow);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .logo{
+        img{
+            width: 8rem;
+        }
+    }
+
+    .header-items{
+        ul{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            -webkit-column-gap: 20px;
+            a{
+                color: var(--white);
+            }
+        }
+    }
+
+    .header-color{
+        transition: 2s;
+        background: linear-gradient(to right, rgba(1,35,7,0.8)0%, rgba(87,76,6, 0.8) 100%);
+    }
+}
+
+//FOR THE CONTENT OF THE COVER PAGE
+.cover-page-content{
+    padding: 20px 80px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        p{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        img{
+            width: 15rem;
+            border-radius: 10px;
+        }
+        .second-image{
+            margin-top: -120px;
+            margin-left: 50px;
+        }
+    }
+    button{
+        color: var(--white);
+        @include button-properties;
+        &:hover{
+            transition: 1s;
+            border: 2px solid var(--shade-yellow);
+            color: var(--bluish-green);
+            background-color: var(--shade-yellow);
+        }
+    }
+}
+
+//FOR THE FOOTER OF SALAMA CONTROL
+footer{
+    color: var(--white);
+    padding: 20px 80px;
+    background: linear-gradient(to right, rgba(1,35,7,0.8)0%, rgba(87,76,6, 0.8) 100%);
+    
+    h4{
+        margin-bottom: 25px;
+    }
+    a{
+        color: var(--white);
+    }
+
+    .footer-content{
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: auto auto auto auto;
+        gap: 150px;
+        -webkit-column-gap: 150px;
+    }
+
+    .medias-sociaux{
+        margin-top: 20px;
+        a{
+            color: var(--white);
+        }
+        i{
+            border-radius: 50%;
+            padding: 12px 13px;
+            color: var(--white);
+            background-color: var(--background);
+        }
+    }
+
+    .copyright{
+        margin-top: 10px;
+        font-size: 14px;
+        color: var(--background);
+        text-align: center;
+    }
+
+    .top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-top: -25px;
+        i{
+            color: var(--white);
+            padding: 13px 15px;
+            border-radius: 100%;
+            background-color: var(--background);
+        }
+    }
+}

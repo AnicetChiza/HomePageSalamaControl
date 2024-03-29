@@ -1,0 +1,483 @@
+:root {
+  --shade-yellow: #f8e16c;
+  --medium-green: #06a04b;
+  --bluish-green: #156064;
+  --orange-red: #e75019;
+  --pink: #ffc2b4;
+  --white: #fff;
+  --black: #0000009f;
+  --background: rgba(255, 255, 255, 0.233);
+  --neutral-shade: #f8f8ed;
+  --red-opaque:#fd65652a;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  color: var(--white);
+  background: linear-gradient(to right, rgba(1, 35, 7, 0.8) 0%, rgba(87, 76, 6, 0.8) 100%), url(../../images/accueil_background_image.jpg) no-repeat;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+header .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px 60px;
+  justify-content: space-between;
+}
+header .header .menu {
+  display: none;
+}
+header .header .menu .menu-icons {
+  width: 50px;
+  text-align: center;
+  padding: 10px 10px;
+  color: var(--bluish-green);
+  background-color: var(--shade-yellow);
+}
+header .header .menu .menu-container {
+  position: absolute;
+  top: 70px;
+  right: 0.5px;
+  width: 100%;
+  transition: 1s;
+  margin-top: -200%;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+}
+header .header .menu .menu-container ul {
+  width: 100%;
+}
+header .header .menu .menu-container ul li {
+  list-style: none;
+  color: var(--bluish-green);
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0px 0px 1.5px 0.5px rgba(1, 35, 7, 0.8);
+}
+header .header .menu .menu-container ul li a {
+  color: rgba(1, 35, 7, 0.8);
+  text-decoration: none;
+  font-weight: bolder;
+}
+header .header .menu .menu-container ul li a:hover {
+  color: var(--shade-yellow);
+}
+header .logo img {
+  width: 8rem;
+}
+header .header-items ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  -webkit-column-gap: 20px;
+}
+header .header-items ul a {
+  color: var(--white);
+}
+header .header-color {
+  transition: 2s;
+  background: linear-gradient(to right, rgba(1, 35, 7, 0.8) 0%, rgba(87, 76, 6, 0.8) 100%);
+}
+
+.cover-page-content {
+  padding: 20px 80px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cover-page-content .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.cover-page-content .content p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.cover-page-content .content img {
+  width: 15rem;
+  border-radius: 10px;
+}
+.cover-page-content .content .second-image {
+  margin-top: -120px;
+  margin-left: 50px;
+}
+.cover-page-content button {
+  color: var(--white);
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid var(--white);
+}
+.cover-page-content button:hover {
+  transition: 1s;
+  border: 2px solid var(--shade-yellow);
+  color: var(--bluish-green);
+  background-color: var(--shade-yellow);
+}
+
+footer {
+  color: var(--white);
+  padding: 20px 80px;
+  background: linear-gradient(to right, rgba(1, 35, 7, 0.8) 0%, rgba(87, 76, 6, 0.8) 100%);
+}
+footer h4 {
+  margin-bottom: 25px;
+}
+footer a {
+  color: var(--white);
+}
+footer .footer-content {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: auto auto auto auto;
+  gap: 150px;
+  -webkit-column-gap: 150px;
+}
+footer .medias-sociaux {
+  margin-top: 20px;
+}
+footer .medias-sociaux a {
+  color: var(--white);
+}
+footer .medias-sociaux i {
+  border-radius: 50%;
+  padding: 12px 13px;
+  color: var(--white);
+  background-color: var(--background);
+}
+footer .copyright {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--background);
+  text-align: center;
+}
+footer .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-top: -25px;
+}
+footer .top i {
+  color: var(--white);
+  padding: 13px 15px;
+  border-radius: 100%;
+  background-color: var(--background);
+}
+
+body {
+  width: 100%;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(0,0,0,0.07)'/%3E%3C/svg%3E");
+}
+
+.apropos {
+  padding: 20px 80px;
+}
+.apropos h3 {
+  margin-bottom: 10px;
+  color: var(--bluish-green);
+}
+.apropos h5 {
+  width: 100px;
+  margin-bottom: 10px;
+  border-bottom: 4px solid var(--shade-yellow);
+}
+.apropos .apropos-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  -webkit-column-gap: 30px;
+}
+.apropos .apropos-items i {
+  font-size: 30px;
+  font-style: italic;
+  color: var(--bluish-green);
+}
+.apropos .apropos-items img {
+  width: 35rem;
+}
+
+/*--------------------------*/
+/*--------------------------*/
+.fonctionnalite-salama {
+  margin-top: 20px;
+  padding: 20px 80px;
+}
+.fonctionnalite-salama h3 {
+  margin-bottom: 10px;
+  color: var(--bluish-green);
+}
+.fonctionnalite-salama h5 {
+  width: 100px;
+  margin-bottom: 10px;
+  border-bottom: 4px solid var(--shade-yellow);
+}
+.fonctionnalite-salama .fonctionnalite-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  -webkit-column-gap: 10px;
+}
+.fonctionnalite-salama .fonctionnalite-content div {
+  padding: 15px 20px;
+}
+
+/*--------------------------*/
+/*--------------------------*/
+.advantages-salama {
+  margin-top: 20px;
+  padding: 20px 80px;
+  text-align: center;
+}
+.advantages-salama h2 {
+  margin-top: 10px;
+  color: var(--bluish-green);
+}
+.advantages-salama .advantages-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+  gap: 20px;
+  -webkit-column-gap: 20px;
+}
+.advantages-salama .advantages-content div h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--bluish-green);
+}
+.advantages-salama .advantages-content div i {
+  border-radius: 50%;
+  padding: 19px 20px;
+}
+
+/*--------------------------*/
+/*--------------------------*/
+.contactez-nous {
+  padding: 20px 80px;
+}
+.contactez-nous h3 {
+  margin-bottom: 10px;
+  color: var(--bluish-green);
+}
+.contactez-nous h5 {
+  width: 100px;
+  margin-bottom: 10px;
+  border-bottom: 4px solid var(--shade-yellow);
+}
+
+/*************************************/
+.salama-app {
+  padding: 20px 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.salama-app .salama-applications {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  -webkit-column-gap: 5px;
+}
+.salama-app .salama-applications div {
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: rgba(1, 35, 7, 0.8);
+}
+.salama-app .salama-applications div a {
+  color: var(--white);
+}
+
+*,
+::after, ::before {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+form .formulaire {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 10px;
+  -webkit-column-gap: 15px;
+}
+form .formulaire div {
+  width: 100%;
+  display: grid;
+}
+form .formulaire div label {
+  font-weight: bolder;
+}
+form .formulaire div input {
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 0px 180px 0px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+}
+form .textarea {
+  gap: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  -webkit-column-gap: 10px;
+}
+form .textarea input, form .textarea textarea {
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 0px 180px 0px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  background: none;
+}
+form button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid var(--white);
+  width: 200px;
+  border: none;
+  color: var(--white);
+  margin-top: 15px;
+  background: rgba(1, 35, 7, 0.8);
+}
+
+@media (max-width: 978px) {
+  header .header .header-items {
+    display: none;
+  }
+  header .header .menu {
+    display: initial;
+  }
+  header .header .menu .menu-icons .icon {
+    display: block;
+    cursor: pointer;
+  }
+  header .header .menu .menu-icons .exit {
+    display: none;
+    cursor: pointer;
+  }
+  header .header .menu .menu-mobile .icon {
+    display: none;
+  }
+  header .header .menu .menu-mobile .exit {
+    display: initial;
+  }
+  header .header .menu .menu-mobile {
+    margin-top: 0;
+  }
+  .cover-page-content .content .images {
+    display: none;
+  }
+  .apropos .apropos-items {
+    display: flex;
+    flex-direction: column;
+  }
+  .fonctionnalite-salama .fonctionnalite-content, .fonctionnalite-salama .advantages-content, .advantages-salama .fonctionnalite-content, .advantages-salama .advantages-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .salama-app {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    -webkit-column-gap: 20px;
+    justify-content: initial;
+  }
+  footer .footer-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+  }
+}
+@media (max-width: 768px) {
+  header .header {
+    padding: 6px 25px;
+  }
+  .apropos, .fonctionnalite-salama, .advantages-salama,
+  .cover-page-content, .contactez-nous, footer {
+    padding: 20px 40px;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 600px) {
+  .apropos .apropos-items img {
+    width: 100%;
+  }
+  form .formulaire {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    -webkit-column-gap: 8px;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 530px) {
+  .fonctionnalite-salama .fonctionnalite-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .cover-page-content .content .items {
+    text-align: center;
+  }
+  .fonctionnalite-salama .fonctionnalite-content, .fonctionnalite-salama .advantages-content, .advantages-salama .fonctionnalite-content, .advantages-salama .advantages-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  footer .footer-content {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 50px;
+  }
+  header .header {
+    padding: 6px 12px;
+  }
+  .apropos, .fonctionnalite-salama, .advantages-salama,
+  .cover-page-content, .contactez-nous, footer {
+    padding: 20px 20px;
+  }
+  .salama-app .salama-applications {
+    display: flex;
+    flex-direction: column;
+  }
+  .salama-app .salama-applications div {
+    width: 100%;
+  }
+}/*# sourceMappingURL=accueil.css.map */
