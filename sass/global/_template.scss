@@ -114,10 +114,10 @@ section {
         @include title-h5;
     }
     .contact-container {
+        width: 100%;
         display: flex;
-        justify-content: space-between;
-        gap: 15px;
-        -webkit-column-gap: 15px;
+        gap: 40px;
+        -webkit-column-gap: 80px;
         .bloc-contact {
             .items {
                 display: flex;

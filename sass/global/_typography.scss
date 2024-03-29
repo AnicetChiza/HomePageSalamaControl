@@ -27,8 +27,12 @@ button {
 
 //FORMULAIRE FOR CONTACT US
 .contact-form {
-    margin-top: 15px;
     form {
+        display: flex;
+        justify-content: center;
+        div {
+            margin-top: 15px;
+        }
         input,
         textarea {
             width: 100%;
@@ -42,7 +46,8 @@ button {
             display: flex;
         }
         button {
-            padding: 10px 40px;
+            margin-top: 15px;
+            padding: 15px 40px;
             color: var(--white);
             font-weight: 600;
             border-radius: 25px;

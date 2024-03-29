@@ -283,10 +283,10 @@ section {
   border-bottom: 4px solid var(--shade-yellow);
 }
 .contactez-nous .contact-container {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  gap: 15px;
-  -webkit-column-gap: 15px;
+  gap: 40px;
+  -webkit-column-gap: 80px;
 }
 .contactez-nous .contact-container .bloc-contact .items {
   display: flex;
@@ -328,7 +328,11 @@ button {
   font-family: "Montserrat", sans-serif;
 }
 
-.contact-form {
+.contact-form form {
+  display: flex;
+  justify-content: center;
+}
+.contact-form form div {
   margin-top: 15px;
 }
 .contact-form form input,
@@ -344,7 +348,8 @@ button {
   display: flex;
 }
 .contact-form form button {
-  padding: 10px 40px;
+  margin-top: 15px;
+  padding: 15px 40px;
   color: var(--white);
   font-weight: 600;
   border-radius: 25px;
