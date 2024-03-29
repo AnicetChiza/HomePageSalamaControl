@@ -115,6 +115,7 @@ section {
     }
     .contact-container {
         display: flex;
+        justify-content: space-between;
         gap: 15px;
         -webkit-column-gap: 15px;
         .bloc-contact {
