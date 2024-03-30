@@ -275,14 +275,15 @@ section {
   border-bottom: 4px solid var(--shade-yellow);
 }
 .contactez-nous .contact-container {
-  display: grid;
+  /*display: grid;
   gap: 0;
   padding-bottom: 15px;
-  grid-template-columns: auto auto;
-  /*width: 100%;
+  grid-template-columns: auto auto;*/
+  width: 100%;
   display: flex;
   gap: 40px;
-  -webkit-column-gap: 80px;*/
+  padding-bottom: 15px;
+  -webkit-column-gap: 80px;
 }
 .contactez-nous .contact-container .bloc-contact .items {
   display: flex;
@@ -328,10 +329,12 @@ button {
   font-family: "Montserrat", sans-serif;
 }
 
+.contact-form {
+  flex-grow: 1;
+}
 .contact-form form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .contact-form form div {
   margin-top: 15px;

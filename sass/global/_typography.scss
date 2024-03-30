@@ -32,10 +32,10 @@ button {
 
 //FORMULAIRE FOR CONTACT US
 .contact-form {
+    flex-grow: 1;
     form {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         div {
             margin-top: 15px;
         }

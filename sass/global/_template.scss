@@ -109,14 +109,15 @@ section {
         @include title-h5;
     }
     .contact-container {
-        display: grid;
+        /*display: grid;
         gap: 0;
         padding-bottom: 15px;
-        grid-template-columns: auto auto;
-        /*width: 100%;
+        grid-template-columns: auto auto;*/
+        width: 100%;
         display: flex;
         gap: 40px;
-        -webkit-column-gap: 80px;*/
+        padding-bottom: 15px;
+        -webkit-column-gap: 80px;
         .bloc-contact {
             .items {
                 display: flex;
