@@ -110,10 +110,13 @@ section {
         @include title-h5;
     }
     .contact-container {
-        width: 100%;
+        display: grid;
+        gap: 0;
+        grid-template-columns: auto auto;
+        /*width: 100%;
         display: flex;
         gap: 40px;
-        -webkit-column-gap: 80px;
+        -webkit-column-gap: 80px;*/
         .bloc-contact {
             .items {
                 display: flex;

@@ -17,7 +17,6 @@ header {
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 6px 60px;
         justify-content: space-between;
         //Ici nous avons traités notre MENU HAMBURGER
         .menu {
@@ -84,7 +83,6 @@ header {
 
 //FOR THE CONTENT OF THE COVER PAGE
 .cover-page-content {
-    padding: 20px 80px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -121,8 +119,9 @@ header {
 
 //FOR THE FOOTER OF SALAMA CONTROL
 footer {
+    padding-top: 30px;
+    padding-bottom: 15px;
     color: var(--white);
-    padding: 20px 80px;
     background: linear-gradient(to right, rgba(1, 35, 7, 0.8)0%, rgba(87, 76, 6, 0.8) 100%);
     h4 {
         margin-bottom: 25px;
