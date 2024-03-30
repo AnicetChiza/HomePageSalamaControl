@@ -13,7 +13,6 @@ section {
 }
 
 .apropos {
-    padding: 20px 80px;
     h3 {
         @include title-properties;
     }
@@ -45,7 +44,6 @@ section {
 
 .fonctionnalite-salama {
     margin-top: 20px;
-    padding: 20px 80px;
     h3 {
         @include title-properties;
     }
@@ -72,7 +70,6 @@ section {
 
 .advantages-salama {
     margin-top: 20px;
-    padding: 20px 80px;
     text-align: center;
     h2 {
         margin-top: 10px;
@@ -106,7 +103,6 @@ section {
 /*--------------------------*/
 
 .contactez-nous {
-    padding: 20px 80px;
     h3 {
         @include title-properties;
     }

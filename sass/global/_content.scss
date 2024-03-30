@@ -1,38 +1,35 @@
 @use '../utils/' as u;
 @use '../utils/mixins' as *;
-
 //This part is for the cover page, it contains the header and the presentation part which has the login button
-main{
+main {
     width: 100%;
     height: 100vh;
     color: var(--white);
-    background: linear-gradient(to right, rgba(1,35,7,0.8)0%, rgba(87,76,6, 0.8) 100%), url(../../images/accueil_background_image.jpg) no-repeat;
+    background: linear-gradient(to right, rgba(1, 35, 7, 0.8)0%, rgba(87, 76, 6, 0.8) 100%), url(../../images/accueil_background_image.jpg) no-repeat;
 }
 
 //THIS IS FOR THE HEADER
-header{
+header {
     width: 100%;
     position: fixed;
     z-index: 1;
-    .header{
+    .header {
         display: flex;
         flex-direction: row;
         align-items: center;
         padding: 6px 60px;
         justify-content: space-between;
-
         //Ici nous avons traités notre MENU HAMBURGER
-        .menu{
+        .menu {
             display: none;
-            .menu-icons{
+            .menu-icons {
                 width: 50px;
                 text-align: center;
                 padding: 10px 10px;
                 color: var(--bluish-green);
                 background-color: var(--shade-yellow);
-
             }
-            .menu-container{
+            .menu-container {
                 position: absolute;
                 top: 70px;
                 right: 0.5px;
@@ -42,19 +39,19 @@ header{
                 background-color: var(--white);
                 display: flex;
                 flex-direction: row;
-                ul{
+                ul {
                     width: 100%;
-                    li{
+                    li {
                         list-style: none;
                         color: var(--bluish-green);
                         text-align: center;
                         padding: 15px;
-                        box-shadow: 0px 0px 1.5px 0.5px rgba(1,35,7,0.8);
-                        a{
-                            color: rgba(1,35,7,0.8);
+                        box-shadow: 0px 0px 1.5px 0.5px rgba(1, 35, 7, 0.8);
+                        a {
+                            color: rgba(1, 35, 7, 0.8);
                             text-decoration: none;
                             font-weight: bolder;
-                            &:hover{
+                            &:hover {
                                 color: var(--shade-yellow);
                             }
                         }
@@ -63,60 +60,57 @@ header{
             }
         }
     }
-    .logo{
-        img{
+    .logo {
+        img {
             width: 8rem;
         }
     }
-
-    .header-items{
-        ul{
+    .header-items {
+        ul {
             display: flex;
             flex-direction: row;
             gap: 20px;
             -webkit-column-gap: 20px;
-            a{
+            a {
                 color: var(--white);
             }
         }
     }
-
-    .header-color{
+    .header-color {
         transition: 2s;
-        background: linear-gradient(to right, rgba(1,35,7,0.8)0%, rgba(87,76,6, 0.8) 100%);
+        background: linear-gradient(to right, rgba(1, 35, 7, 0.8)0%, rgba(87, 76, 6, 0.8) 100%);
     }
 }
 
 //FOR THE CONTENT OF THE COVER PAGE
-.cover-page-content{
+.cover-page-content {
     padding: 20px 80px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .content{
+    .content {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-
-        p{
+        p {
             margin-top: 15px;
             margin-bottom: 15px;
         }
-        img{
+        img {
             width: 15rem;
             border-radius: 10px;
         }
-        .second-image{
+        .second-image {
             margin-top: -120px;
             margin-left: 50px;
         }
     }
-    button{
+    button {
         color: var(--white);
         @include button-properties;
-        &:hover{
+        &:hover {
             transition: 1s;
             border: 2px solid var(--shade-yellow);
             color: var(--bluish-green);
@@ -126,57 +120,54 @@ header{
 }
 
 //FOR THE FOOTER OF SALAMA CONTROL
-footer{
+footer {
     color: var(--white);
     padding: 20px 80px;
-    background: linear-gradient(to right, rgba(1,35,7,0.8)0%, rgba(87,76,6, 0.8) 100%);
-    
-    h4{
+    background: linear-gradient(to right, rgba(1, 35, 7, 0.8)0%, rgba(87, 76, 6, 0.8) 100%);
+    h4 {
         margin-bottom: 25px;
     }
-    a{
+    a {
         color: var(--white);
     }
-
-    .footer-content{
+    .footer-content {
         display: grid;
         justify-content: space-between;
         grid-template-columns: auto auto auto auto;
         gap: 150px;
         -webkit-column-gap: 150px;
     }
-
-    .medias-sociaux{
+    .medias-sociaux {
         margin-top: 20px;
-        a{
+        text-align: right;
+        a {
             color: var(--white);
         }
-        i{
+        i {
             border-radius: 50%;
             padding: 12px 13px;
             color: var(--white);
-            background-color: var(--background);
+            background-color: var(--gray);
         }
     }
-
-    .copyright{
+    .copyright {
         margin-top: 10px;
         font-size: 14px;
-        color: var(--background);
+        color: var(--gray);
+        font-size: 0.9rem;
         text-align: center;
     }
-
-    .top{
+    .top {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         cursor: pointer;
         margin-top: -25px;
-        i{
+        i {
             color: var(--white);
             padding: 13px 15px;
             border-radius: 100%;
-            background-color: var(--background);
+            background-color: var(--gray);
         }
     }
 }

@@ -16,6 +16,11 @@ html {
     scroll-padding-top: 5rem;
 }
 
+//Interne padding
+.interne-marge {
+    padding: 20px 80px;
+}
+
 //Input properties
 input,
 textarea,
@@ -29,6 +34,7 @@ button {
 .contact-form {
     form {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         div {
             margin-top: 15px;
@@ -46,6 +52,8 @@ button {
             display: flex;
         }
         button {
+            width: fit-content;
+            margin: auto;
             margin-top: 15px;
             padding: 15px 40px;
             color: var(--white);

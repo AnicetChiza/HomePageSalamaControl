@@ -148,6 +148,7 @@ footer .footer-content {
 }
 footer .medias-sociaux {
   margin-top: 20px;
+  text-align: right;
 }
 footer .medias-sociaux a {
   color: var(--white);
@@ -156,12 +157,13 @@ footer .medias-sociaux i {
   border-radius: 50%;
   padding: 12px 13px;
   color: var(--white);
-  background-color: var(--background);
+  background-color: var(--gray);
 }
 footer .copyright {
   margin-top: 10px;
   font-size: 14px;
-  color: var(--background);
+  color: var(--gray);
+  font-size: 0.9rem;
   text-align: center;
 }
 footer .top {
@@ -175,7 +177,7 @@ footer .top i {
   color: var(--white);
   padding: 13px 15px;
   border-radius: 100%;
-  background-color: var(--background);
+  background-color: var(--gray);
 }
 
 body {
@@ -188,9 +190,6 @@ section {
   background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(0,0,0,0.07)'/%3E%3C/svg%3E");
 }
 
-.apropos {
-  padding: 20px 80px;
-}
 .apropos h3 {
   margin-bottom: 10px;
   color: var(--bluish-green);
@@ -219,7 +218,6 @@ section {
 /*--------------------------*/
 .fonctionnalite-salama {
   margin-top: 20px;
-  padding: 20px 80px;
 }
 .fonctionnalite-salama h3 {
   margin-bottom: 10px;
@@ -244,7 +242,6 @@ section {
 /*--------------------------*/
 .advantages-salama {
   margin-top: 20px;
-  padding: 20px 80px;
   text-align: center;
 }
 .advantages-salama h2 {
@@ -270,9 +267,6 @@ section {
 
 /*--------------------------*/
 /*--------------------------*/
-.contactez-nous {
-  padding: 20px 80px;
-}
 .contactez-nous h3 {
   margin-bottom: 10px;
   color: var(--bluish-green);
@@ -320,6 +314,10 @@ html {
   scroll-padding-top: 5rem;
 }
 
+.interne-marge {
+  padding: 20px 80px;
+}
+
 input,
 textarea,
 button {
@@ -330,6 +328,7 @@ button {
 
 .contact-form form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 .contact-form form div {
@@ -348,6 +347,8 @@ button {
   display: flex;
 }
 .contact-form form button {
+  width: fit-content;
+  margin: auto;
   margin-top: 15px;
   padding: 15px 40px;
   color: var(--white);
