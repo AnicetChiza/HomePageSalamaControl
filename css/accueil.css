@@ -180,7 +180,6 @@ footer .top i {
 }
 
 body {
-  margin: auto;
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
 }
@@ -278,6 +277,7 @@ section {
 .contactez-nous .contact-container {
   display: grid;
   gap: 0;
+  padding-bottom: 15px;
   grid-template-columns: auto auto;
   /*width: 100%;
   display: flex;
