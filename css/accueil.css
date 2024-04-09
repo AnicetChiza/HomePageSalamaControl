@@ -260,7 +260,19 @@ section {
 }
 .advantages-salama .advantages-content div i {
   border-radius: 50%;
-  padding: 19px 20px;
+  padding: 18px 18px;
+  font-size: 1.2rem;
+  color: var(--white);
+  background-color: var(--bluish-green);
+}
+.advantages-salama .advantages-content div img {
+  padding: 10px;
+  width: 50px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: black;
+  transform: rotate3d(30px);
 }
 
 /*--------------------------*/
