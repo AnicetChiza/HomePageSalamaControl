@@ -43,6 +43,8 @@ section {
 
 .fonctionnalite-salama {
     margin-top: 20px;
+    width: 80%;
+    margin: auto;
     h3 {
         @include title-properties;
     }
@@ -51,11 +53,28 @@ section {
     }
     .fonctionnalite-content {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
         -webkit-column-gap: 10px;
         div {
-            padding: 15px 20px;
+            padding: 30px 20px;
+            font-style: italic;
+            box-shadow: 0px 5px 10px var(--gray);
+            p {
+                opacity: 0.7;
+            }
+            h3 {
+                background: linear-gradient(to right, var(--bluish-green)0%, rgba(87, 76, 6, 0.8) 100%);
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+            h4 {
+                font-size: 0.9rem;
+                display: flex;
+                color: var(--bluish-green);
+                justify-content: flex-end;
+                font-style: normal;
+            }
         }
     }
 }
@@ -91,17 +110,29 @@ section {
                 padding: 18px 18px;
                 font-size: 1.2rem;
                 color: var(--white);
+                width: fit-content;
+                margin: auto;
+                animation-delay: 0.8s;
+                animation: animated 8s linear infinite;
                 background-color: var(--bluish-green);
-                //box-shadow: 0px 0px 40px 0px rgb(182, 182, 182);
+                @keyframes animated {
+                    0% {
+                        transform: translateY(-8px);
+                    }
+                    100% {
+                        transform: translateY(8px);
+                    }
+                }
+            }
+            .advantage-icon {
+                display: flex;
+                flex-direction: column;
             }
             img {
-                padding: 10px;
-                width: 50px;
+                width: 7rem;
                 margin: auto;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                background-color: black;
-                transform: rotate3d(30px);
+                margin-top: -30px;
+                filter: blur(10px);
             }
         }
     }
